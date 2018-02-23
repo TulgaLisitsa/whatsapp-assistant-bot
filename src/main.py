@@ -9,8 +9,13 @@ from xml.dom import minidom
 from tqdm import tqdm
 import datetime
 from datetime import datetime
-
+import fact
+import quote
+import joke
+import flirt
 import os
+import xml.etree.ElementTree as ET
+import random
 
 browser = webdriver.Chrome("/home/oxygen_/Documents/chromedriver")
 
@@ -55,21 +60,28 @@ while True:
 	# print(lst_cmd_text)
 		if(lst_cmd_text == '/quote'):
 			ele = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]')
-			ele.send_keys("motherfucker!!")
+			tez = quote.quote_generator()
+			ele.send_keys(str(tez))
 			btn = browser.find_element_by_class_name("_2lkdt")
 			btn.click()
-
-
-
-
-
-
-# while(True):
-# 	if(wht_hr == system_hr and wht_min == system_min):
-# 		lst_cmd_text = str(browser.find_element_by_xpath('//div[@class="_3zb-j ZhF0n"]/span[last()]').text)
-# 		if(lst_cmd_text == '/quote'):
-# 			ele = browser.find_element_by_xpath('//div[@class="_3F6QL _2WovP"]')
-# 			ele.click().send_keys("you got me!!")
-
+		elif(lst_cmd_text == '/fact'):
+			ele = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]')
+			tez = fact.fact_generator()
+			ele.send_keys(str(tez))
+			btn = browser.find_element_by_class_name("_2lkdt")
+			btn.click()
+		elif(lst_cmd_text == '/flirt'):
+			ele = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]')
+			tez = flirt.flirt_generator()
+			ele.send_keys(str(tez))
+			btn = browser.find_element_by_class_name("_2lkdt")
+			btn.click()		
+		elif(lst_cmd_text == '/joke'):
+			ele = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]')
+			tez = joke.joke_generator()
+			ele.send_keys(str(tez))
+			btn = browser.find_element_by_class_name("_2lkdt")
+			btn.click()
+		
 
 time.sleep(1000000)
