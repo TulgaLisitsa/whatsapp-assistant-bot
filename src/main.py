@@ -22,6 +22,7 @@ import definine
 import weather
 import youtubee
 import news
+import calc
 browser = webdriver.Chrome("/home/oxygen_/Documents/chromedriver")
 
 s = "https://web.whatsapp.com/"
@@ -135,5 +136,11 @@ while True:
 				ele.send_keys(t)
 				btn = browser.find_element_by_class_name("_2lkdt")
 				btn.click()
-
+		elif(str(lst_cmd_text[0:5]) == "/calc"):
+			print("calc here\n")
+			ele = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]')
+			tez =calc.calc_generator(str(lst_cmd_text))
+			ele.send_keys(tez)
+			btn = browser.find_element_by_class_name("_2lkdt")
+			btn.click()
 time.sleep(1000000)
