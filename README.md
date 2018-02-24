@@ -61,10 +61,10 @@ ex : /weather china
  ```-> it grabs news relates to sports```
 ######  7.8) /news business
  ```-> it grabs news related to business
- (for all estimated fetchup time 5-10sec)```
- 
+ (for all estimated fetchup time 5-10sec)
+``` 
 ######  8) /calc [argument]
- ```
+```
  -> it performs mathematical functions
  -> estimate fetch-up time : 2-5sec
  ex: /calc 2^5  
