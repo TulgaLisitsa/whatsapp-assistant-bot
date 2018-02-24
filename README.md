@@ -1,11 +1,11 @@
 
-Initial Setup:
+###### Initial Setup:
 ```
 1) Create a whatsapp group or member named 'BOT' ( Compulsory)
 2) message 'Hi' to the group or member.
 ```
 
-Commands Accepted:
+###### Commands Accepted:
 ```
 1) /quote 
 -> It fetches a random quote from the datasets/quote.xml file.
