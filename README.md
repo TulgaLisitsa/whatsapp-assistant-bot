@@ -5,6 +5,14 @@
 2) message 'Hi' to the group or member.
 ```
 
+###### Software Requirements :
+```
+1) Python3
+2) Chrome Browser
+3) Chrome Driver ( make sure to give your driver path in all codes)
+4) Selenium
+```
+
 ###### Commands Accepted:
 
 ###### 1) /quote 
