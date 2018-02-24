@@ -13,6 +13,11 @@
 4) Selenium
 ```
 
+##### how to run :
+```
+1) go to /src folder
+2) fire : python main.py
+```
 ###### Commands Accepted:
 
 ###### 1) /quote 
