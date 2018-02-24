@@ -46,22 +46,22 @@ ex : /weather china
  ```
 ###### 7) 
 ######  7.1) /news
-  -> it grabs the top stories 
+ ```-> it grabs the top stories ```
 ######  7.2) /news local
- -> it grabs the local news (specific to your state/country)
+ ```-> it grabs the local news (specific to your state/country)```
 ######  7.3) /news technology
- -> it grabs the technological news.
+ ```-> it grabs the technological news.```
 ######  7.4) /news world
- -> it grabs the world news
+``` -> it grabs the world news```
 ######  7.5) /news entertainment
- -> it grabs the entertainment news
+``` -> it grabs the entertainment news```
 ######  7.6) /news health
- -> it grabs news related to health and fitness
-######  7.7) /news sports
- -> it grabs news relates to sports
+ ```-> it grabs news related to health and fitness```
+ ######  7.7) /news sports
+ ```-> it grabs news relates to sports```
 ######  7.8) /news business
- -> it grabs news related to business
- (for all estimated fetchup time 5-10sec)
+ ```-> it grabs news related to business
+ (for all estimated fetchup time 5-10sec)```
  
 ######  8) /calc [argument]
  ```
